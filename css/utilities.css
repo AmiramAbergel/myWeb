@@ -191,3 +191,44 @@
     max-width: 25%;
     padding: 0 4px;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+        display: none;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items,
+    .flex-grid .rows {
+        flex-direction: column;
+    }
+
+    .flex-columns .column,
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .flex-columns .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+    .menu-wrap {
+        visibility: visible;
+    }
+}

@@ -324,40 +324,6 @@ footer .social > * {
     margin-right: 30px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        height: 120px;
-        padding: 20px;
-        display: none;
-    }
-
-    .navbar a {
-        padding: 10px 10px;
-        margin: 0 3px;
-    }
-
-    .flex-items,
-    .flex-grid .rows {
-        flex-direction: column;
-    }
-
-    .flex-columns .column,
-    .flex-grid .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .team img {
-        width: 70%;
-    }
-
-    .menu-wrap {
-        visibility: visible;
-    }
-}
-
 .element {
     animation-name: stretch;
     animation-duration: 1.5s;

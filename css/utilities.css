@@ -18,8 +18,7 @@
 .btn {
     display: inline-block;
     border: none;
-
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
     transition: opacity 1s ease-in-out;
@@ -39,8 +38,8 @@
 
 .btn-secondary,
 .bg-secondary {
-    background: rgb(0, 0, 0);
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .btn-dark,
@@ -49,10 +48,36 @@
     color: white;
 }
 
+.bg-colors {
+    background: #33cccc; /* Fallback */
+    color: #333;
+    animation: color 9s infinite linear;
+}
+
+@keyframes color {
+    0% {
+        background: #33cccc5e;
+    }
+    20% {
+        background: #33cc3671;
+    }
+    40% {
+        background: #b8cc336e;
+    }
+    60% {
+        background: #fcca0073;
+    }
+    80% {
+        background: #33cc367e;
+    }
+    100% {
+        background: #33cccc71;
+    }
+}
+
 .btn-light,
 .bg-light {
     background: rgba(161, 212, 177, 0.424);
-    color: #333;
 }
 
 .btn-outline {
@@ -122,12 +147,16 @@
 }
 
 .flex-columns h2 {
-    font-size: 40px;
-    font-weight: 100;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
 }
 
 .flex-columns p {
     margin: 20px 0;
+
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* Section header */

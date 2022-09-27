@@ -2,6 +2,7 @@
     --primary-color: rgba(13, 110, 139, 0.75);
     --secondary-color: rgba(229, 148, 0, 0.9);
     --overlay-color: rgba(24, 39, 51, 0.85);
+    --detail-color: rgba(255, 255, 255, 0.685);
     --menu-speed: 0.75s;
 }
 
@@ -17,27 +18,28 @@
 .btn {
     display: inline-block;
     border: none;
-    background: var(--primary-color);
+
     color: #fff;
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
     transition: opacity 1s ease-in-out;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .btn-primary,
 .bg-primary {
-    background: grey;
+    background: rgb(0, 0, 0);
     color: white;
 }
 
 .btn-secondary,
 .bg-secondary {
-    background: rgb(105, 235, 93);
+    background: rgb(0, 0, 0);
     color: white;
 }
 
@@ -49,7 +51,7 @@
 
 .btn-light,
 .bg-light {
-    background: #f4f4f4;
+    background: rgba(161, 212, 177, 0.424);
     color: #333;
 }
 
@@ -69,6 +71,20 @@
 
 .flex-items > div {
     padding: 20px;
+}
+
+/*Icons Flex grid */
+.flex-grid .rows {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+}
+
+.flex-grid .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Flex columns */

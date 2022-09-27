@@ -28,9 +28,9 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about">About</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,197 +39,350 @@
         <header class="hero">
             <div id="navbar" class="navbar top">
                 <h1 class="logo"></h1>
-                <nav class="top-middle">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                    </ul>
-                </nav>
                 <nav class="top-right">
                     <ul>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#account">About</a></li>
-                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#home">Home</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="content">
+            <div id="home" class="content">
+                <img src="/img/PhotoFunia-1662545439.jpg" />
                 <h1>Amiram Abergel</h1>
                 <p>Software Developer -</p>
-                <a href="#about" class="btn"> Read More</a>
+                <a href="#about" class="btn btn-outline"> Read More</a>
             </div>
         </header>
         <main>
+            <!-- About: Solutions -->
+            <section id="about" class="solutions flex-columns">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                            <img
+                                src="img/Screenshot 2022-09-27 103002.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2 bg-primary">
+                            <h2>Amiram Abergel</h2>
+                            <h3>Software Developer</h3>
+                            <p>
+                                Enthusiastic developer eager to contribute to
+                                team success through hard work, attention to
+                                detail, and excellent organizational skills.
+                                Motivated to learn, grow and excel. Looking for
+                                a full-time software- development.
+                            </p>
+                            <ul>
+                                <li>
+                                    * Bachelor of Science - Computer Science
+                                </li>
+                                <li>* IT Manager- Shinobi Group</li>
+                                <li>* Tugboat Commander – Navy</li>
+                                <li>* Full-Stack Bootcamp - Appleseeds</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- About: Icons -->
-            <section id="about" class="icons bg-light">
+            <section id="about" class="icons-s">
                 <div class="flex-items">
                     <div>
-                        <i class="fa-brands fa-square-js fa-2x"></i>
+                        <a href="#skills" class="btn">
+                            <i class="fas fa-university fa-4x"></i>
+                        </a>
                         <div>
-                            <h3>Java Script</h3>
+                            <h3>Skills</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Possimus, voluptatum.
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Tempore, iusto!
                             </p>
                         </div>
                     </div>
                     <div>
-                        <i class="fa-brands fa-python fa-2x"></i>
+                        <a href="#projects" class="btn"
+                            ><i class="fas fa-book-reader fa-4x"></i
+                        ></a>
+
                         <div>
-                            <h3>Python</h3>
+                            <h3>Projects</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Possimus, voluptatum.
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Tempore, iusto!
                             </p>
                         </div>
                     </div>
                     <div>
-                        <i class="fa-solid fa-code fa-2x"></i>
+                        <a href="#about" class="btn">
+                            <i class="fas fa-pencil-alt fa-4x"></i>
+                        </a>
                         <div>
-                            <h3>C#</h3>
+                            <h3>Resume</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Possimus, voluptatum.
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Tempore, iusto!
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- About: Solutions -->
-            <section class="solutions flex-columns">
-                <div class="row">
-                    <div class="column">
-                        <div class="column-1">
-                            <img src="img/programToy.jpg" alt="" />
+            <!-- About: Icons -->
+            <section id="skills" class="icons flex-grid bg-light">
+                <h1>Skills</h1>
+                <h4>
+                    Below are some of my skills, and I'm always looking to learn
+                    more.
+                </h4>
+                <br />
+                <div>
+                    <div class="rows">
+                        <div class="col">
+                            <div class="box">
+                                <i class="fa-brands fa-square-js fa-2x"></i>
+                                <div>
+                                    <h3>Java Script</h3>
+                                    <p>
+                                        With a combined 3 years of experience
+                                        from personal projects and Boot-camp at
+                                        Appleseeds, I often develop full-stack
+                                        applications, consisting of
+                                        HTML/JavaScript/CSS.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-c fa-2x"></i>
+                                <div>
+                                    <h3>C</h3>
+                                    <p>
+                                        With a combined 3 years of experience
+                                        from personal projects and Boot-camp at
+                                        Appleseeds, I often develop full-stack
+                                        applications, consisting of
+                                        HTML/JavaScript/CSS.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="column-2 bg-primary">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quaerat, minus.
-                            </p>
-                            <a href="#" class="btn btn-outline"> Read More </a>
+                        <div class="col">
+                            <div class="box">
+                                <i class="fa-brands fa-python fa-2x"></i>
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>
+                                        Over the past 3 years, I've had
+                                        extensive experience with Python in the
+                                        course, classwork, and personal
+                                        projects. Some of my personal projects
+                                        in Python
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <i class="fa-brands fa-html5 fa-2x"></i>
+                                <div>
+                                    <h3>HTML, CSS</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Possimus, voluptatum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="box">
+                                <i class="fa-solid fa-code fa-2x"></i>
+                                <div>
+                                    <h3>C#</h3>
+                                    <p>
+                                        Over the past 3 years, I've had
+                                        extensive experience with Python in the
+                                        course, classwork, and personal
+                                        projects. Some of my personal projects
+                                        in Python
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <i class="fa-brands fa-unity fa-2x"></i>
+                                <div>
+                                    <h3>Unity</h3>
+                                    <p>
+                                        Over the past 3 years, I've had
+                                        extensive experience with Python in the
+                                        course, classwork, and personal
+                                        projects. Some of my personal projects
+                                        in Python
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Cases -->
-            <section id="cases" class="cases flex-grid section-padding">
+            <section id="projects" class="cases flex-grid section-padding">
                 <header class="section-header">
                     <h4>This is what I do</h4>
-                    <h2>Program Cases</h2>
+                    <h2>Personal Projects</h2>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Maxime, reiciendis!
+                        Here you can see some of the projects I've done on my
+                        own time.
                     </p>
                 </header>
                 <div class="row">
                     <div class="column">
                         <a
-                            href="img/keyboardGrass.jpg"
+                            class="portfolio-item"
+                            href="https://www.instructables.com/Good-Morning-World/"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/keyboardGrass.jpg" alt=""
+                            <span class="caption">
+                                <h2>
+                                    Good Morning World (Final project in IOT
+                                    course)
+                                </h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img
+                                src="img/closeupCode.jpg"
+                                alt=""
+                                class="center"
                         /></a>
+
                         <a
-                            href="img/programToy.jpg"
+                            class="portfolio-item"
+                            href="https://gameon.co.il/"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/programToy.jpg" alt="" />
+                            <span class="caption">
+                                <h2>Game-On Website</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                     </div>
                     <div class="column">
                         <a
-                            href="img/keyboardGrass.jpg"
+                            class="portfolio-item"
+                            href="https://github.com/ploy32/Escape-Room-IDC-prog"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/keyboardGrass.jpg" alt="" />
+                            <span class="caption">
+                                <h2>Unity Escape Room (VR)</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                         <a
-                            href="img/programToy.jpg"
+                            class="portfolio-item"
+                            href="https://www.youtube.com/watch?v=S_ZHRJ4_SSg"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/programToy.jpg" alt="" />
+                            <span class="caption">
+                                <h2>VR Game (Unreal Engine)</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                     </div>
                     <div class="column">
                         <a
-                            href="img/keyboardGrass.jpg"
+                            class="portfolio-item"
+                            href="https://github.com/ploy32/Weekend1-Project--ERROR-Pages"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/keyboardGrass.jpg" alt="" />
+                            <span class="caption">
+                                <h2>ERROR-Pages</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                         <a
-                            href="img/programToy.jpg"
+                            class="portfolio-item"
+                            href="https://github.com/ploy32/Weekend2-Project--HTMLCSS-Tesla"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/programToy.jpg" alt="" />
+                            <span class="caption">
+                                <h2>Tesla</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                     </div>
                     <div class="column">
                         <a
-                            href="img/keyboardGrass.jpg"
+                            class="portfolio-item"
+                            href="https://github.com/ploy32/Pre-Course-BootCamp-hangedMan"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/keyboardGrass.jpg" alt="" />
+                            <span class="caption">
+                                <h2>Hanged Man Game</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                         <a
-                            href="img/programToy.jpg"
+                            class="portfolio-item"
+                            href="https://github.com/ploy32/myWeb"
                             data-lightbox="cases"
                             data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,dolore!"
                         >
-                            <img src="img/programToy.jpg" alt="" />
+                            <span class="caption">
+                                <h2>My Web page</h2>
+                                <h3>
+                                    A collection of various neural network
+                                    models in TensorFlow.
+                                </h3>
+                            </span>
+                            <img src="img/closeupCode.jpg" alt="" />
                         </a>
                     </div>
                 </div>
             </section>
-            <!-- Team -->
-            <section
-                id="team"
-                class="team section-padding container showcase-container"
-            >
-                <header class="section-header">
-                    <h4>Who an I</h4>
-                    <h2>My goals</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Maxime, reiciendis!
-                    </p>
-                </header>
-                <div class="flex-items">
-                    <div>
-                        <img src="img/computerParts.jpg" alt="" />
-                        <h4>Lorem, ipsum.</h4>
-                        <p>position</p>
-                    </div>
-                    <div>
-                        <img src="img/computerParts.jpg" alt="" />
-                        <h4>Lorem, ipsum.</h4>
-                        <p>position</p>
-                    </div>
-                    <div>
-                        <img src="img/computerParts.jpg" alt="" />
-                        <h4>Lorem, ipsum.</h4>
-                        <p>position</p>
-                    </div>
-                </div>
-            </section>
+
             <!-- Contact -->
             <section id="contact" class="contact flex-columns">
                 <div class="row">
                     <div class="column">
                         <div class="column-1">
-                            <img src="img/smart-city-concept.jpg" alt="" />
+                            <img src="img/programToy.jpg" alt="" />
                         </div>
                     </div>
                     <div class="column">

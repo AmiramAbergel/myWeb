@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
+    line-height: 1.4;
     font-weight: 500;
     background: #fff;
     color: #333;
@@ -18,6 +19,62 @@ ul {
 a {
     color: #333;
     text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+#showcase {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase::before {
+    content: "";
+    background: url("/img/programming8.jpg") center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+#showcase h1 {
+    font-size: 4rem;
+}
+
+#showcase p {
+    font-size: 1.3rem;
 }
 
 /* Navbar */
@@ -37,6 +94,18 @@ nav a:before {
     position: fixed;
     top: -20px;
     padding: 0 20px;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.navbar .top-middle {
+    margin-left: 118px;
 }
 
 .navbar a {
@@ -73,16 +142,12 @@ nav a:before {
     background: #aaa9a523;
     visibility: none;
     opacity: 0;
-    z-index: -1;
+    z-index: -10;
 }
 .navbar a:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
-}
-
-.navbar .top-middle {
-    margin-left: 118px;
 }
 
 /* Header */
@@ -125,5 +190,118 @@ nav a:before {
 }
 
 .hero * {
-    z-index: 10;
+    z-index: 5;
+}
+
+/* Icons */
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: rgb(105, 235, 93);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.cases img:hover {
+    opacity: 0.7;
+}
+
+.team img {
+    border-radius: 30%;
+}
+
+/* Callback form */
+.callback-form {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.callback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+    margin-bottom: 15px;
+}
+
+.callback-form input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+    outline-color: rgb(105, 235, 93);
+}
+
+.callback-form .btn {
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: rgb(105, 235, 93);
+}
+
+footer .social > * {
+    margin-right: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+        display: none;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column,
+    .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+    .menu-wrap {
+        visibility: visible;
+    }
 }
